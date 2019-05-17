@@ -1,0 +1,516 @@
+body {
+    font-size: 15px;
+    color: #333;
+    background: #fff;
+    font-family: 'SourceCodePro', "PingFang SC", Helvetica, Arial, "Microsoft YaHei", "WenQuanYi Micro Hei", "tohoma,sans-serif";
+    margin: 0 auto;
+    max-width:800px;
+    padding: 3%;
+}
+
+h1 {
+    font-size: 2.2em;
+    font-weight: 700;
+    line-height: 1.1;
+    padding-top: 16px;
+    margin-bottom: 4px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.5em;
+    margin-top: 2.2em;
+    margin-bottom: 4px;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin: 40px 10px 20px 0;
+    padding-left: 9px;
+    border-left: 6px solid #50b5fd;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+
+h3 {
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin: 10px 0 5px;
+    padding-top: 10px;
+}
+
+
+h3:before {
+    content: '✏';
+    margin-right: 5px;
+}
+h4:before {
+    content: '✔';
+    margin-right: 5px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.4;
+    margin: 10px 0 5px;
+    padding-top: 10px
+}
+
+h5,
+h6 {
+    font-size: .8em;
+}
+
+h5 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-weight: normal;
+    color: #AAA;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 15px;
+    height: auto;
+}
+
+dl,
+ol,
+ul {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    padding-left: 5%;
+    line-height: 1.8;
+}
+
+p {
+    margin: 0 0 20px;
+    padding: 0;
+    line-height: 1.8;
+}
+
+a {
+    color: #fd5050;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f55852;
+    text-decoration: underline;
+}
+
+a:focus {
+    outline-offset: -2px;
+}
+
+blockquote {
+    font-family: 'ubuntu mono', Arial, serif;
+    font-size: 1em;
+    font-style: normal;
+    padding: 30px 38px 0px 38px;
+    margin: 0 0 15px;
+    position: relative;
+    line-height: 1.8;
+    text-indent: 0;
+    border: none;
+    color: #888;
+}
+
+blockquote:before {
+    content: "\201C";
+    left: 12px;
+    top: 0;
+    color: #E0E0E0;
+    font-size: 2em;
+    font-family: 'ubuntu mono', Arial, serif;
+    line-height: 1em;
+    font-weight: 700;
+    position: absolute;
+}
+
+blockquote:after {
+    content: "\201C";
+    right: 12px;
+    bottom: -26px;
+    color: #E0E0E0;
+    font-size: 2em;
+    font-family: Arial, serif;
+    line-height: 1em;
+    font-weight: 700;
+    position: absolute;
+    bottom: -31px;
+}
+
+strong,
+dfn {
+    font-weight: 700;
+}
+
+em,
+dfn {
+    font-style: italic;
+    font-weight: 400;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+/*code {font-size:90%;}*/
+
+/*pre {text-align:left; overflow-x: scroll; color: #257fa0; background: #f6f6f6; padding: 10pt 15pt; border-radius: 3px; border: solid 1px #e2e2e2;}*/
+/* pre {
+    margin: 0 0 10px;
+    font-size: 14px;
+    line-height: 1.42857;
+    word-break: break-all;
+    word-wrap: break-word;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    display: block;
+    background: #f8f8f8;
+    padding: 10px 20px;
+    border: none;
+    margin-bottom: 25px;
+    color: #666;
+    font-family: Courier, sans-serif;
+} */
+pre {
+    padding: 16px;
+    margin: 1em 0;
+    line-height: 1.45;
+    border-radius: 2px;
+    background-color: #282823;
+    overflow: auto;
+}
+
+pre>code {
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    border-radius: none;
+    font-size: 15px;
+    color: #ccc;
+    background-color: transparent;
+}
+
+code {
+    color: #fd5050;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    font-family: "ubuntu mono", Menlo, Monaco, Consolas, "Courier New", monospace;
+    padding: 2px 4px;
+    font-size: 100%;
+}
+
+/* p>code {
+    color: #c7264e;
+    background-color: #f8f8f8;
+    font-size: 1em;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+} */
+
+figure {
+    margin: 1em 0;
+}
+
+figcaption {
+    font-size: 0.75em;
+    padding: 0.5em 2em;
+    margin-bottom: 2em;
+}
+
+figure img {
+    margin-bottom: 0px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px;
+    border-top: 1px dashed #BFBFBF;
+}
+
+ol p,
+ul p {
+    margin-bottom: 0px;
+}
+
+li {
+    margin-bottom: 0.75em;
+    margin-top: 0.75em;
+}
+
+p strong {
+    color: #fd5050;
+    font-weight: 600
+}
+
+ol#footnotes {
+    font-size: 0.95em;
+    padding-top: 1em;
+    margin-top: 1em;
+    margin-left: 0;
+    border-top: 1px solid #eaeaea;
+    counter-reset: footer-counter;
+    list-style: none;
+    color: #555;
+    padding-left: 5%;
+    margin: 20px 0;
+}
+
+ol#footnotes li {
+    margin-bottom: 10px;
+    margin-left: 16px;
+    font-weight: 400;
+    line-height: 2;
+    list-style-type: none;
+}
+
+ol#footnotes li:before {
+    content: counter(footer-counter)". ";
+    counter-increment: footer-counter;
+    font-weight: 800;
+    font-size: .95em;
+}
+
+@keyframes highfade {
+    0% {
+        background-color: none;
+    }
+
+    20% {
+        background-color: yellow;
+    }
+
+    100% {
+        background-color: none;
+    }
+}
+
+@-webkit-keyframes highfade {
+    0% {
+        background-color: none;
+    }
+
+    20% {
+        background-color: yellow;
+    }
+
+    100% {
+        background-color: none;
+    }
+}
+
+a:target,
+ol#footnotes li:target,
+sup a:target {
+    animation-name: highfade;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-name: highfade;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+a:target {
+    border: 0;
+    outline: 0;
+}
+
+/* animation-iteration-count: 1;
+-webkit-animation-timing-function: ease-in-out;
+
+} */
+
+a:target {
+    border: 0;
+    outline: 0;
+}
+
+/* tion-iteration-count: 1;
+-webkit-animation-timing-function: ease-in-out;
+
+} */
+
+a:target {
+    border: 0;
+    outline: 0;
+}
+
+
+
+code[class*="language-"],
+pre[class*="language-"] {
+    color: #ccc;
+    background: none;
+    font-family: 'Ubuntu Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.8;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+    padding: 1em;
+    margin: .9em 0;
+    overflow: auto;
+}
+
+:not(pre)>code[class*="language-"],
+pre[class*="language-"] {
+    background: #2d2d2d;
+}
+
+/* Inline code */
+:not(pre)>code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
+    white-space: normal;
+}
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #999;
+}
+
+.token.punctuation {
+    color: #ccc;
+}
+
+.token.tag,
+.token.attr-name,
+.token.namespace,
+.token.deleted {
+    color: #e2777a;
+}
+
+.token.function-name {
+    color: #1890ff;
+}
+
+.token.boolean,
+.token.number,
+.token.function {
+    color: #f08d49;
+}
+
+.token.property,
+.token.class-name,
+.token.constant,
+.token.symbol {
+    color: #f8c555;
+}
+
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.builtin {
+    color: #cc99cd;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable {
+    color: #7ec699;
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+    color: #67cdcc;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+.token.inserted {
+    color: green;
+}
+
+pre[class*="language-"].line-numbers {
+    position: relative;
+    padding-left: 3.8em;
+    counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers>code {
+    position: relative;
+    white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.8em;
+    width: 3em;
+    /* works for line-numbers below 1000 lines */
+    letter-spacing: -1px;
+    border-right: 1px solid #999;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.line-numbers-rows>span {
+    pointer-events: none;
+    display: block;
+    counter-increment: linenumber;
+}
+
+.line-numbers-rows>span:before {
+    content: counter(linenumber);
+    color: #999;
+    display: block;
+    padding-right: 0.8em;
+    text-align: right;
+}
