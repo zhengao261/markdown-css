@@ -4,7 +4,7 @@ body {
     background: #fff;
     font-family: 'SourceCodePro', "PingFang SC", Helvetica, Arial, "Microsoft YaHei", "WenQuanYi Micro Hei", "tohoma,sans-serif";
     margin: 0 auto;
-    max-width:800px;
+    max-width: 800px;
     padding: 3%;
 }
 
@@ -49,6 +49,7 @@ h3:before {
     content: '✏';
     margin-right: 5px;
 }
+
 h4:before {
     content: '✔';
     margin-right: 5px;
@@ -90,8 +91,17 @@ ol,
 ul {
     margin-top: 12px;
     margin-bottom: 20px;
-    padding-left: 5%;
+    padding-left: 3%;
     line-height: 1.8;
+}
+
+ul li:before {
+    content: '✍️';
+    margin-right: 10px;
+}
+
+ol {
+    padding-left: 5%;
 }
 
 p {
@@ -103,6 +113,10 @@ p {
 a {
     color: #fd5050;
     text-decoration: none;
+}
+
+a:before {
+    content: '📝';
 }
 
 a:hover {
@@ -154,7 +168,8 @@ blockquote:after {
 
 strong,
 dfn {
-    font-weight: 700;
+    color: #fd5050;
+    font-weight: 600;
 }
 
 em,
@@ -249,9 +264,10 @@ ul p {
     margin-bottom: 0px;
 }
 
-li {
+ul li {
     margin-bottom: 0.75em;
     margin-top: 0.75em;
+    list-style: none;
 }
 
 p strong {
@@ -278,6 +294,7 @@ ol#footnotes li {
     font-weight: 400;
     line-height: 2;
     list-style-type: none;
+    list-style: none;
 }
 
 ol#footnotes li:before {
@@ -513,4 +530,31 @@ pre[class*="language-"].line-numbers>code {
     display: block;
     padding-right: 0.8em;
     text-align: right;
+}
+
+.m-eastern-header tagList tag{
+    display: inline-block;
+    height: 15px;
+    margin-right: 10px;
+    background-color: #50b5fd;
+    line-height: 15px;
+    color: #FFF;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+/* .m-eastern-header > tagList::before {
+    content: '🏷️';
+    margin-right: '10px';
+} */
+.m-eastern-header > tagList > tag:nth-child(1){
+    background-color: #f78054;
+}
+
+.m-eastern-header > tagList > tag:nth-child(2){
+    background-color: #50b5fd;
+}
+
+.m-eastern-header > tagList > tag:nth-child(3){
+    background-color: #50b5fd;
 }
